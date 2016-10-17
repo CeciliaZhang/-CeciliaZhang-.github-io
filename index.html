@@ -7,7 +7,7 @@
         <title>Chenchen Zhang (Cecilia)</title>
         <link href="{{ site.baseurl }}/public/css/bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body style="padding-top: 120px">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-data">
@@ -31,7 +31,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-4" style="padding-top: 120px;">
+                <div class="col-lg-3 col-md-4 col-sm-4">
                     <div class="panel panel-default">
                         <img src="{{ site.baseurl }}/public/img/avatar.jpg" class="img-responsive" style="width: 100%;" alt="Chenchen Zhang">
                         <div class="panel-body">
@@ -48,24 +48,25 @@
                                 <b>Email: </b><a href="mailto:chenchen.z@outlook.com" target="_top">chenchen.z@outlook.com</a>
                             </h6>
                             <h6>
-                                <b>Resume: </b> <a href="">[chenchen_cv.pdf]</a>
+                                <b>LinkedIn: </b> <a href="https://cn.linkedin.com/in/chenchenz" target="_blank">Chenchen Zhang</a>
                             </h6>
                             <h6>
-                                <b>LinkedIn: </b> <a href="https://cn.linkedin.com/in/chenchenz" target="_blank">Chenchen Zhang</a>
+                                <a href="https://cn.linkedin.com/in/chenchenz" target="_blank"><img src="{{ site.baseurl }}/public/img/icon/linkedin.min.svg" height="24px" width="24px"></a>
+                                <a href="https://github.com/ceciliazhang" target="_blank"><img src="{{ site.baseurl }}/public/img/icon/github.min.svg" height="24px" width="24px"></a>
                             </h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-8 col-sm-8" style="padding-top: 120px;">
+                <div class="col-lg-9 col-md-8 col-sm-8">
                     <div class="panel panel-default">
                         <div class="panel-heading" id="education">
                             <h4>Education</h4>
                         </div>
                         <div class="panel-body" style="padding-top: 5px;">
-                            <h5>School of Law, Tsinghua University</h5>
+                            <h5><b>School of Law</b>, Tsinghua University, Beijing, China</h5>
                             <h6>LL.B., Expected June 2017</h6>
                             <hr/>
-                            <h5>Australian National University</h5>
+                            <h5><b>College of Law</b>, Australian National University, Canberra, Australia</h5>
                             <h6>Exchange Student, July 2015 to Nov. 2015</h6>
                         </div>
                     </div>
@@ -106,8 +107,7 @@
                         <div class="panel-body" style="padding-top: 5px;">
                             <h5><b>Artificial Intelligence: the Terminator or Change Maker of Legal Industry?</b></h5>
                             <h6>ZHANG, Chenchen. In <i>Dushu</i>, Oct. 2016, pp. 38-40. (CSSCI Journal)</h6>
-                        </div>
-                        <div class="panel-body" style="padding-top: 5px;">
+                            <hr/>
                             <h5><b>Guiding Case No. 35: CGCP Annotations</b></h5>
                             <h6>Gechlik, Mei, Yanzhou Chen, and Chenchen Zhang.</h6>
                             <h6><i>Stanford Law School China Guiding Cases Project: Guiding Cases in Perspective</i>, in press.</h6>
@@ -128,5 +128,10 @@
         </div>
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="{{ site.baseurl }}/public/js/bootstrap.min.js"></script>
+        <script>
+            var shiftWindow = function() { scrollBy(0, -100) };
+            if (location.hash) shiftWindow();
+            window.addEventListener("hashchange", shiftWindow);
+        </script>
     </body>
 </html>
