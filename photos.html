@@ -1,0 +1,68 @@
+---
+---
+<html>
+	<head>
+		<title>Material Photo Gallery</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/public/css/material-photo-gallery.css">
+
+
+        <style>
+			/* DEMO */
+			body {
+				background: #fefefe;
+				color: white;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				text-align: center;
+				font-family: 'Roboto Mono';
+			}
+
+			h2 {
+				font-weight: 300;
+				margin: 4vh 4vw;
+				letter-spacing: 3px;
+				color: grey;
+				text-transform: uppercase;
+			}
+
+            h3 {
+                position: absolute;
+                top: 200px;
+                left: 0;
+                width: 100%;
+            }
+
+            h3 span {
+                color: white;
+                font: bold 24px/45px Helvetica, Sans-Serif;
+                letter-spacing: -1px;
+                background: rgb(0, 0, 0); /* fallback color */
+                background: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="m-p-g">
+			<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+				<img src="{{ site.baseurl }}/public/img/avatar.jpg"
+					 data-full="{{ site.baseurl }}/public/img/avatar.jpg" class="m-p-g__thumbs-img" />
+                <img src="{{ site.baseurl }}/public/img/photos/with_judge.jpg"
+                     data-full="{{ site.baseurl }}/public/img/photos/with_judge.jpg" class="m-p-g__thumbs-img" alt="With Judge"/>
+			</div>
+
+			<div class="m-p-g__fullscreen"></div>
+		</div>
+
+		<script src="{{ site.baseurl }}/public/js/material-photo-gallery.js"></script>
+		<script>
+			var elem = document.querySelector('.m-p-g');
+
+			document.addEventListener('DOMContentLoaded', function() {
+				var gallery = new MaterialPhotoGallery(elem);
+			});
+		</script>
+	</body>
+</html>
