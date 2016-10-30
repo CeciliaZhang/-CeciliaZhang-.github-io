@@ -8,121 +8,17 @@
         <link href="{{ site.baseurl }}/public/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body style="padding-top: 120px">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-data">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button-->
-                <div class="navbar-brand" style="padding-left: 30px">Chenchen Zhang</div>
-                <div id="navbar-data" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="{{ site.baseurl }}#education">Education</a></li>
-                        <li><a href="{{ site.baseurl }}#experience">Work Experience</a></li>
-                        <li><a href="{{ site.baseurl }}#research">Research</a></li>
-                        <li><a href="{{ site.baseurl }}#publications">Publications</a></li>
-                        <li><a href="{{ site.baseurl }}#honors">Honors</a></li>
-                        <li><a href="{{ site.baseurl }}#misc">Misc</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+        {% include navbar.html %}
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-4">
-                    <div class="panel panel-default">
-                        <img src="{{ site.baseurl }}/public/img/avatar.jpg" class="img-responsive" style="width: 100%;" alt="Chenchen Zhang">
-                        <div class="panel-body">
-
-                            <h4>Chenchen Zhang (Cecilia)</h4>
-                            <p style="font-size: 14px">
-                                School of Law <br/> Tsinghua University <br/>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <h6>
-                                <b>Email: </b><a href="mailto:chenchen.z@outlook.com" target="_top">chenchen.z@outlook.com</a>
-                            </h6>
-                            <h6>
-                                <b>LinkedIn: </b> <a href="https://cn.linkedin.com/in/chenchenz" target="_blank">Chenchen Zhang</a>
-                            </h6>
-                            <h6>
-                                <a href="https://cn.linkedin.com/in/chenchenz" target="_blank"><img src="{{ site.baseurl }}/public/img/icon/linkedin.min.svg" height="24px" width="24px"></a>
-                                <a href="https://github.com/ceciliazhang" target="_blank"><img src="{{ site.baseurl }}/public/img/icon/github.min.svg" height="24px" width="24px"></a>
-                            </h6>
-                        </div>
-                    </div>
+                    {% include information.html %}
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" id="education">
-                            <h4>Education</h4>
-                        </div>
-                        <div class="panel-body" style="padding-top: 5px;">
-                            <h5>School of Law, <b>Tsinghua University</b>, Beijing, China</h5>
-                            <h6>LL.B., Expected June 2017</h6>
-                            <hr/>
-                            <h5>College of Law, <b>Australian National University</b>, Canberra, Australia</h5>
-                            <h6>Exchange Student, July 2015 to Nov. 2015</h6>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" id="experience">
-                            <h4>Work Experience</h4>
-                        </div>
-                        <div class="panel-body" style="padding-top: 5px;">
-                            <h5><b>UN Women</b>, China Representative Office</h5>
-                            <h6>Full-time Research Assistant, Sept. 2016 till now</h6>
-                            <hr/>
-                            <h5 style="line-height: 120%;"><b>Food and Agriculture Organization of the UN</b>, China Representative Office</h5>
-                            <h6>Intern, Mar. 2016 to Aug. 2016</h6>
-                            <hr/>
-                            <h5 style="line-height: 120%;"><b>Beijing Qianqian Law Firm</b>, formerly Beijing Zhongze Women’s Legal Aid Center</h5>
-                            <h6>Intern, July 2016</h6>
-                            <hr/>
-                            <h5><b>Simmons & Simmons</b>, Beijing Representative Office</h5>
-                            <h6>Winter Intern, Dec. 2015 to Feb. 2016</h6>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" id="research">
-                            <h4>Research</h4>
-                        </div>
-                        <div class="panel-body" style="padding-top: 5px;">
-                            <h5><b>China Guiding Cases Project</b>, Stanford Law School</h5>
-                            <h6>Editor, Mar. 2016 till now</h6>
-                            <hr/>
-                            <h5 style="line-height: 120%;"><b>International Commmission of Jurists</b>, Australian Branch</h5>
-                            <h6>Researcher, July 2015 to Sept. 2015</h6>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" id="publications">
-                            <h4>Publications</h4>
-                        </div>
-                        <div class="panel-body" style="padding-top: 5px;">
-                            <h5><b>Artificial Intelligence: the Terminator or Change Maker of Legal Industry?</b></h5>
-                            <h6>ZHANG, Chenchen. In <i>Dushu</i>, Oct. 2016, pp. 38-40. (CSSCI Journal)</h6>
-                            <hr/>
-                            <h5><b>Guiding Case No. 35: CGCP Annotations</b></h5>
-                            <h6>Gechlik, Mei, Yanzhou Chen, and Chenchen Zhang.</h6>
-                            <h6><i>Stanford Law School China Guiding Cases Project: Guiding Cases in Perspective</i>, in press.</h6>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" id="honors">
-                            <h4>Honors</h4>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" id="misc">
-                            <h4>Misc</h4>
-                        </div>
-                    </div>
+                    {% include education.html %}
+                    {% include experiences.html %}
+                    {% include research.html %}
+                    {% include publications.html %}
                 </div>
             </div>
         </div>
