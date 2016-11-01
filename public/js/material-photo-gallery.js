@@ -1432,6 +1432,7 @@ window.MaterialPhotoGallery = MaterialPhotoGallery;
 		}
 
 		if (this._setupComplete && this._fullImgsLoaded && !this._fullImgOpen) {
+            $('.navbar').css('display', 'none');
 			this._activateFullImg.call(this);
 			this._activateControls.call(this);
 			this._activateFullBox.call(this);
@@ -1509,6 +1510,7 @@ window.MaterialPhotoGallery = MaterialPhotoGallery;
 
 	Gallery.prototype._handleClose = function() {
 		if (this._fullImgOpen) {
+            $('.navbar').css('display', 'block');
 			this._closeFullImg.call(this);
 		}
 	};
