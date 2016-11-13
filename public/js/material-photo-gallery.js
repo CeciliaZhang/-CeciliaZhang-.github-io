@@ -1204,6 +1204,7 @@ window.MaterialPhotoGallery = MaterialPhotoGallery;
 	Gallery.prototype.init = function() {
 
 		var controls = CreateControls.init();
+
 		this._element.appendChild(controls);
 
 		// Root element.
@@ -1419,11 +1420,9 @@ window.MaterialPhotoGallery = MaterialPhotoGallery;
 	 */
 
 	Gallery.prototype._handleThumbClick = function(event) {
-
 		if (this._thumb != event.target) {
 			// Cache the thumb being hovered over.
 			this._thumb = event.target;
-
 			// Index of thumb.
 			this._thumbIndex = this._thumbs.indexOf(this._thumb);
 
@@ -1432,11 +1431,11 @@ window.MaterialPhotoGallery = MaterialPhotoGallery;
 		}
 
 		if (this._setupComplete && this._fullImgsLoaded && !this._fullImgOpen) {
-            $('.navbar').css('display', 'none');
 			this._activateFullImg.call(this);
 			this._activateControls.call(this);
 			this._activateFullBox.call(this);
 			this._disableScroll();
+            $('.navbar').css('z-index', '-3');
 		}
 	};
 
@@ -1510,8 +1509,8 @@ window.MaterialPhotoGallery = MaterialPhotoGallery;
 
 	Gallery.prototype._handleClose = function() {
 		if (this._fullImgOpen) {
-            $('.navbar').css('display', 'block');
 			this._closeFullImg.call(this);
+            $('.navbar').css('z-index', '3');
 		}
 	};
 
