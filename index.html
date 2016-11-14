@@ -1,28 +1,31 @@
 ---
 ---
 <html lang='en'>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Chenchen Zhang (Cecilia)</title>
-        <link href="{{ site.baseurl }}/public/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body style="padding-top: 120px">
-        {% include navbar.html %}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-4">
-                    {% include information.html %}
-                </div>
-                <div class="col-lg-9 col-md-8 col-sm-8">
-                    {% include education.html %}
-                    {% include experiences.html %}
-                    {% include research.html %}
-                    {% include publications.html %}
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chenchen Zhang (Cecilia)</title>
+    <link href="{{ site.baseurl }}/public/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="padding-top: 120px">
+{% include navbar.html %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-4">
+            {% include information.html %}
         </div>
-        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="{{ site.baseurl }}/public/js/bootstrap.min.js"></script>
-    </body>
+        <div class="col-lg-9 col-md-8 col-sm-8">
+            {% include education.html %}
+            {% include experiences.html %}
+            {% include research.html %}
+            {% include publications.html %}
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="{{ site.baseurl }}/public/js/bootstrap.min.js"></script>
+{% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+{% endif %}
+</body>
 </html>

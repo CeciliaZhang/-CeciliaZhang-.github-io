@@ -63,5 +63,8 @@
         var gallery = new MaterialPhotoGallery(elem);
     });
 </script>
+{% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+{% endif %}
 </body>
 </html>
