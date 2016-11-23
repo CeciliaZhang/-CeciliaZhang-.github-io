@@ -4,6 +4,8 @@ title: Artificial Intelligence - the Terminator or Change Maker of Legal Industr
 author: Chenchen Zhang
 ---
 
+> This article was published in Chinese; here I translated it into English.
+
 One of the most influential events across the world this March would be the Go match between Lee Sedol,
 one of the world’s top Go players, and AlphaGo, a specialized artificial intelligence (AI) for Go
 developed by Google DeepMind. At first, people were astonished at how well AlphaGo played; then
