@@ -27,7 +27,7 @@ kramdown:
   entity_output: as_char
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-gems:
+plugins:
  - jekyll-redirect-from
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
