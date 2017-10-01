@@ -4,7 +4,7 @@ title: Artificial Intelligence - the Terminator or Change Maker of Legal Industr
 author: Chenchen Zhang
 ---
 
-> This article was published in Chinese; here I translated it into English.
+> This article was published in Chinese (in October 2016); here I translated it into English.
 
 One of the most gripping events across the world this March would be the Go match between Lee Sedol, one of the world’s top Go players, and AlphaGo, a specialized artificial intelligence (AI) for Go developed by Google DeepMind. At first, people were astonished at how well AlphaGo played; then they were frightened by it, as the AI beats the world champion at 4:1. People once thought that Go was the most complicated board game ever designed, and that computers would never be able to beat the best human players, simply because the computational resources required to find a best move is ten of the six hundred power. Equipped with Monte Carlo Tree Search algorithm and two powerful neural networks, AlphaGo can improve itself through learning for other matches and self-play, and is able to acquire a powerful strategy over variables of exponential growth. This competition between human beings and machines forces us to consider several serious problems. Who will control the future world – human beings or machines? Will machines seek to enslave or even exterminate human beings? If this day finally comes, what can people do to protect themselves?
 
